@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Chevio</title>
+  <meta name="description" content="Chevio's skills, projects, and certificates in computer networking and Linux." />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta property="og:title" content="Experience — Chevio" />
+  <meta property="og:description" content="Chevio's skills, projects, and certificates in computer networking and Linux." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <style>
+    /* ── Skill grid: icon-only, no emoji ── */
+    .skill-badge { flex-direction: row; align-items: center; gap: 0.6rem; justify-content: flex-start; }
+    .skill-icon { width: 18px; height: 18px; flex-shrink: 0; color: var(--accent); }
+    .skill-icon svg { width: 100%; height: 100%; display: block; }
+
+    /* ── Project cards: no image block ── */
+    .project-card { display: flex; flex-direction: column; }
+    .project-image { display: none; }
+    .project-body { padding: 1.5rem; flex: 1; border-top: none; }
+    .project-card { border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg); box-shadow: var(--shadow-sm); transition: box-shadow var(--transition), transform var(--transition); overflow: hidden; }
+    .project-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .project-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; letter-spacing: -0.02em; color: var(--text-primary); margin-bottom: 0.5rem; }
+    .project-desc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .project-number { display: block; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-tertiary); letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Chevio<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-nav">Let's Talk</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="color: var(--accent);">Let's Talk →</a>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header-label">Portfolio</div>
+        <h1 class="page-title reveal">Experience<br />&amp; Skills</h1>
+        <p class="page-subtitle reveal reveal-delay-1">
+          Real-world experience, hands-on projects, and professional certifications
+          from my journey in computer networking and system administration.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== INTERNSHIP ===== -->
+    <section class="internship-section">
+      <div class="container">
+        <div class="section-label reveal">Work Experience</div>
+        <h2 class="section-title reveal">Internship / PKL</h2>
+
+        <div style="margin-top: 2.5rem;">
+          <div class="internship-card reveal">
+            <div class="internship-logo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+
+            <div class="internship-info">
+              <div class="internship-meta">
+                <div>
+                  <div class="internship-company">PT Mega Artha Lintas Data</div>
+                  <div class="internship-role">Network Technician Intern</div>
+                </div>
+                <span class="internship-period">2026 · PKL</span>
+              </div>
+
+              <p class="internship-desc">
+                Completed an industrial work practice (PKL) at a local ISP company in Wonosobo.
+                Gained hands-on experience in network infrastructure operations, fiber optic maintenance,
+                and MikroTik router configuration in a production environment. Assisted in troubleshooting
+                customer connectivity issues and maintaining network uptime.
+              </p>
+
+              <div class="internship-tags">
+                <span class="tag">MikroTik</span>
+                <span class="tag">Fiber Optic</span>
+                <span class="tag">Networking</span>
+                <span class="tag">Troubleshooting</span>
+                <span class="tag">ISP Operations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills-section">
+      <div class="container">
+        <div class="section-label reveal">Capabilities</div>
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <p class="section-subtitle reveal reveal-delay-1">
+          Tools and technologies I work with regularly, built through coursework, labs, and real-world practice.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="skill-badge reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="skill-name">MikroTik</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-1">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <span class="skill-name">Networking</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-1">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <span class="skill-name">Linux</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-2">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <span class="skill-name">Cisco IOS</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-2">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <span class="skill-name">Windows Server</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-3">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <span class="skill-name">Fiber Optic</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-3">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <span class="skill-name">Troubleshooting</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-3">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span class="skill-name">OSPF / BGP</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-3">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <span class="skill-name">SSH Hardening</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-3">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <span class="skill-name">SQL / MySQL</span>
+          </div>
+
+          <div class="skill-badge reveal reveal-delay-3">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </div>
+            <span class="skill-name">Bash Scripting</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-label reveal">Projects</div>
+        <h2 class="section-title reveal">Selected Work</h2>
+        <p class="section-subtitle reveal reveal-delay-1">
+          Practical lab projects and personal builds that demonstrate my networking and system skills.
+        </p>
+
+        <div class="projects-grid">
+
+          <div class="project-card reveal">
+            <div class="project-body">
+              <span class="project-number">01</span>
+              <h3 class="project-title">OSPF Dynamic Routing</h3>
+              <p class="project-desc">
+                Configured a multi-router OSPF topology with 5 routers, implementing area-based routing,
+                DR/BDR election, and full connectivity across Backbone and Branch networks. Included
+                NAT and DHCP integration.
+              </p>
+              <div class="project-tech">
+                <span class="tag">MikroTik</span>
+                <span class="tag">OSPF</span>
+                <span class="tag">NAT</span>
+                <span class="tag">DHCP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-body">
+              <span class="project-number">02</span>
+              <h3 class="project-title">VLAN Segmentation</h3>
+              <p class="project-desc">
+                Implemented VLAN segmentation across managed switches to isolate network traffic
+                between departments. Configured inter-VLAN routing for controlled communication
+                between segments.
+              </p>
+              <div class="project-tech">
+                <span class="tag">Cisco IOS</span>
+                <span class="tag">VLAN</span>
+                <span class="tag">Trunk</span>
+                <span class="tag">Inter-VLAN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-body">
+              <span class="project-number">03</span>
+              <h3 class="project-title">DHCP Server Setup</h3>
+              <p class="project-desc">
+                Configured automatic IP address distribution using MikroTik DHCP Server.
+                Set up address pools, gateway assignment, and DNS configuration for
+                multiple client segments.
+              </p>
+              <div class="project-tech">
+                <span class="tag">MikroTik</span>
+                <span class="tag">DHCP</span>
+                <span class="tag">IP Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-body">
+              <span class="project-number">04</span>
+              <h3 class="project-title">Linux Web Server</h3>
+              <p class="project-desc">
+                Deployed and configured Nginx on Ubuntu VPS with SSL certificate via Let's Encrypt.
+                Applied SSH hardening, systemd service management, user access control, and
+                basic firewall rules.
+              </p>
+              <div class="project-tech">
+                <span class="tag">Linux</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">SSL/TLS</span>
+                <span class="tag">SSH</span>
+                <span class="tag">UFW</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-body">
+              <span class="project-number">05</span>
+              <h3 class="project-title">Automated Server Hardening Script</h3>
+              <p class="project-desc">
+                Wrote a Bash script to automate Ubuntu server hardening: disabling root SSH login,
+                setting up UFW firewall rules, configuring fail2ban, and creating a non-root sudo user.
+                Reduces manual setup from 30+ minutes to under 2 minutes.
+              </p>
+              <div class="project-tech">
+                <span class="tag">Bash</span>
+                <span class="tag">Linux</span>
+                <span class="tag">SSH</span>
+                <span class="tag">UFW</span>
+                <span class="tag">fail2ban</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <section class="certs-section">
+      <div class="container">
+        <div class="section-label reveal">Credentials</div>
+        <h2 class="section-title reveal">Certificates</h2>
+        <p class="section-subtitle reveal reveal-delay-1">
+          Professional certifications I'm pursuing alongside my vocational studies.
+        </p>
+
+        <div class="certs-grid">
+
+          <div class="cert-card reveal">
+            <div class="cert-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status in-progress">
+                <span class="cert-status-dot"></span>
+                In Progress
+              </div>
+              <div class="cert-name">LPIC-1</div>
+              <div class="cert-issuer">Linux Professional Institute</div>
+            </div>
+          </div>
+
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status in-progress">
+                <span class="cert-status-dot"></span>
+                In Progress
+              </div>
+              <div class="cert-name">MTCNA</div>
+              <div class="cert-issuer">MikroTik Academy</div>
+            </div>
+          </div>
+
+          <div class="cert-card reveal reveal-delay-2">
+            <div class="cert-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status completed">
+                <span class="cert-status-dot"></span>
+                Completed
+              </div>
+              <div class="cert-name">Network Practice Exam</div>
+              <div class="cert-issuer">
+                Complete Practical Assignments with above average grades in SMK Informatika Wonosobo</div>
+                <div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-name">Chevio<span style="color:var(--accent)">.</span></div>
+          <div class="footer-copy">© 2026 Chevio. All rights reserved.</div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- .page-wrap -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
